@@ -4,5 +4,4 @@
 
 RewriteEngine On 
 RewriteCond %{REQUEST_FILENAME} !-f 
-RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* /on/covid19reg.php [R=301,NC,L]
