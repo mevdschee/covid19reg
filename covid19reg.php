@@ -15,11 +15,11 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     $day = date('d');
     $date = date('Y-m-d');
     $time = date('H:i:s');
-    $file = file_get_contents("$day.log");
-    if (substr($file, 0, 10) != $date) {
-        file_put_contents("$day.log", "$date\n");
+    $file = file_get_contents("$day.php");
+    if (substr($file, 9, 10) != $date) {
+        file_put_contents("$day.php", "<?php // $date\n");
     }
-    file_put_contents("$day.log", "$time $identification\n", FILE_APPEND);
+    file_put_contents("$day.php", "// $time $identification\n", FILE_APPEND);
     setcookie('covid19reg', $identification, time() + 24 * 3600 * 365);
     echo '<form>';
     echo '<p>' . sprintf($texts['registered'], htmlspecialchars($identification, ENT_QUOTES, 'UTF-8')) . '</p>';
