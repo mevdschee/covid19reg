@@ -16,12 +16,13 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST'):
     setcookie('covid19reg', $identification, time() + 24 * 3600 * 365);
     ?>
     <form>
-    <p>You have been registered as: "<?php echo htmlspecialchars($identification, ENT_QUOTES, 'UTF-8'); ?>".
+    <p>You have been registered as: "<?php echo htmlspecialchars($identification, ENT_QUOTES, 'UTF-8'); ?>".</p>
     <input type="submit" value="Ok">
     </form>
     <?php
 else: ?>
     <form method="post">
+    <p>Enter a phone number or email address, so that we can contact you.</p>
     <input name="covid19reg" value="<?php echo htmlspecialchars($identification, ENT_QUOTES, 'UTF-8'); ?>">
     <input type="submit" value="Register">
     </form>
