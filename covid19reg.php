@@ -32,5 +32,5 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     echo '<input type="submit" value="' . $texts['register'] . '">';
     echo '</form>';
 }
-echo '<a href="qrcode.php">QR</a>';
+echo '<br/><br/><a href="qrcode.php">QR</a>';
 echo '</body></html>';
