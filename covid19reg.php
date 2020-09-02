@@ -22,13 +22,13 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     file_put_contents("$day.log", "$time $identification\n", FILE_APPEND);
     setcookie('covid19reg', $identification, time() + 24 * 3600 * 365);
     echo '<form>';
-    echo sprintf($texts['registered'], htmlspecialchars($identification, ENT_QUOTES, 'UTF-8'));
+    echo '<p>' . sprintf($texts['registered'], htmlspecialchars($identification, ENT_QUOTES, 'UTF-8')) . '</p>';
     echo '<input type="submit" value="' . $texts['next'] . '">';
     echo '</form>';
 } else {
     echo '<form method="post">';
     echo '<label for="covid19reg">' . $texts['label'] . '</label><br/>';
-    echo '<input id="covid19reg" name="covid19reg" value="' . htmlspecialchars($identification, ENT_QUOTES, 'UTF-8') . '">';
+    echo '<input id="covid19reg" name="covid19reg" value="' . htmlspecialchars($identification, ENT_QUOTES, 'UTF-8') . '"> ';
     echo '<input type="submit" value="' . $texts['register'] . '">';
     echo '</form>';
 }
