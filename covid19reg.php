@@ -8,8 +8,9 @@ $texts = [
     'register' => 'Register',
 ];
 // code
-echo "<html><head><title>$texts[title]</title></head>";
-echo "<body><h1>$texts[title]</h1>";
+echo "<html><head><title>$texts[title]</title></head><body>";
+echo '<div style="float:right"><a href="qrcode.php">QR</a></div>';
+echo "<h1>$texts[title]</h1>";
 $identification = $_COOKIE['covid19reg'] ?? $_POST['covid19reg'] ?? false;
 if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     $day = date('d');
@@ -32,5 +33,4 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     echo '<input type="submit" value="' . $texts['register'] . '">';
     echo '</form>';
 }
-echo '<br/><br/><a href="qrcode.php">QR</a>';
 echo '</body></html>';
