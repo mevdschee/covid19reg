@@ -16,8 +16,8 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     $date = date('Y-m-d');
     $time = date('H:i:s');
     $file = file_get_contents("$day.php");
-    if (substr($file, 9, 10) != $date) {
-        file_put_contents("$day.php", "<?php // $date\n");
+    if (substr($file, 17, 10) != $date) {
+        file_put_contents("$day.php", "<?php exit(); // $date\n");
     }
     file_put_contents("$day.php", "// $time $identification\n", FILE_APPEND);
     setcookie('covid19reg', $identification, time() + 24 * 3600 * 365);
