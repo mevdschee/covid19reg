@@ -1,0 +1,90 @@
+/* TIKKIE */
+body, form {background: #6968c1;}
+form p span, form textarea, ul li a {color: #4db5ab;}
+form input[type="submit"] {background: #4db5ab;}
+
+/* BLUE */
+body, form {background: #1d4daa;}
+form p span, form textarea, ul li a {color: #329bdb;}
+form input[type="submit"] {background: #329bdb;}
+
+/* ORANGE BLUE */
+body, form {background: #2c4e91;}
+form p span, form textarea, ul li a {color: #e37838;}
+form input[type="submit"] {background: #e37838;}
+
+/* GRAY BLUE */
+body, form {background: #697182;}
+form p span, form textarea, ul li a {color: #3db1ea;}
+form input[type="submit"] {background: #3db1ea;}
+
+/* GRAY YELLOW */
+body, form {background: #697182;}
+form p span, form textarea, ul li a {color: #d2b82c;}
+form input[type="submit"] {background: #d2b82c;}
+
+
+
+
+
+
+
+* {padding: 0; margin: 0;}
+html {font-size: 15px;}
+body {color: white; font-family: 'Nunito'; font-weight: 600; line-height: 1.4; display: flex; flex-direction: column; align-items: center; height: 100%;}
+body, a {color: rgba(255,255,255,0.3);}
+a {text-decoration: none;}
+body::after {content: ""; position: fixed; left: 0; top: 0; width: 100%; height: 100vh; background: rgba(0,0,0,0.4); z-index: -1;}
+h1 {text-align: center; font-size: 15px; font-weight: 600; padding: 30px 15px 30px;}
+label {
+    font-size: 20px;
+    font-weight: 600;
+}
+form {
+    height: 250px;
+    max-height: 100%;
+    position: relative;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 20px 20px 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+#innerbody {
+    width: 350px; 
+    max-width: 100%;
+    max-height: 100%;
+}
+form img {width: 70px; margin: 20px auto;}
+form p {font-size: 20px; flex-grow: 1; text-align: center;}
+form input, form textarea {font-family: 'Nunito'; font-weight: 600;}
+form textarea {
+    background: none;
+    border: 0;
+    font-size: 20px;
+    flex-grow: 1;
+    padding: 10px 0;
+    resize: none;
+}
+form input[type="submit"] {
+    border-radius: 25px;
+    border: 0;
+    padding: 12px 25px 13px;
+    border-radius: 30px;
+    color: white;
+    font-size: 21px;
+    font-weight: 800;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+ul {margin: 90px 15px; border-top: 1px solid rgba(255,255,255,0.2);}
+ul li {background: rgba(255,255,255,0.00); list-style: none; font-weight: 300; border-bottom: 1px solid rgba(255,255,255,0.2);}
+ul li a {font-weight: 400;}
+ul li input {display: none;}
+ul li input + label {cursor: pointer; font-size: 15px; display: block; padding: 10px 0;}
+ul li input + label + p {display: none; padding: 0 0 25px 0;}
+ul li input:checked + label {font-weight: 700; padding: 20px 0 10px;}
+ul li input:checked + label + p {display: block;}
+ul li input + label:hover, ul li input:checked + label, ul li input:checked + label + p {color: white;}

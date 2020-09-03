@@ -1,0 +1,18 @@
+{
+    "{{title}}": "COVID19 registration",
+    "{{organization}}": "Some popular sports club",
+    "{{has_registered}}": "has been registered!",
+    "{{phone_email}}": "What is your phone number or email address?",
+    "{{next}}": "Next",
+    "{{register}}": "Register",
+    "{{q1_question}}": "Why should I register?",
+    "{{q1_answer}}": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus libero eu commodo mattis. Nulla diam magna, tincidunt vitae felis sed, placerat ornare nibh. Nam porta eget dolor non ultrices. Etiam pharetra quam sit amet turpis bibendum, in pellentesque urna dapibus.",
+    "{{q2_question}}": "Can I register other people?",
+    "{{q2_answer}}": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus libero eu commodo mattis. Nulla diam magna, tincidunt vitae felis sed, placerat ornare nibh. Nam porta eget dolor non ultrices. Etiam pharetra quam sit amet turpis bibendum, in pellentesque urna dapibus.",
+    "{{q3_question}}": "I like this tool, can I get it too?",
+    "{{q3_answer}}": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus libero eu commodo mattis. Nulla diam magna, tincidunt vitae felis sed, placerat ornare nibh. Nam porta eget dolor non ultrices. Etiam pharetra quam sit amet turpis bibendum, in pellentesque urna dapibus.",
+    "{{q4_question}}": "Is there a privacy statement?",
+    "{{q4_answer}}": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus libero eu commodo mattis. Nulla diam magna, tincidunt vitae felis sed, placerat ornare nibh. Nam porta eget dolor non ultrices. Etiam pharetra quam sit amet turpis bibendum, in pellentesque urna dapibus.",
+    "{{q5_question}}": "How do I share the URL?",
+    "{{q5_answer}}": "You may scan the <a href=\"qrcode.php\">QR code</a>."
+}

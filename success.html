@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COVID19 registration</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="innerbody">
+
+        <h1>{{title}}<br />{{organization}}</h1>
+
+        <form>
+            <img src="register.svg" />
+
+            <p><span>{{identification}}</span><br />{{has_registered}}</p>
+            <input type="submit" value="{{next}}">
+        </form>
+
+        <ul>
+            <li>
+                <input id="q1" type="checkbox"><label for="q1">{{q1_question}}</label>
+                <p>{{q1_answer}}</p>
+            </li>
+            <li>
+                <input id="q2" type="checkbox"><label for="q2">{{q2_question}}</label>
+                <p>{{q2_answer}}</p>
+            </li>
+            <li>
+                <input id="q3" type="checkbox"><label for="q3">{{q3_question}}</label>
+                <p>{{q3_answer}}</p>
+            </li>
+            <li>
+                <input id="q4" type="checkbox"><label for="q4">{{q4_question}}</label>
+                <p>{{q4_answer}}</p>
+            </li>
+            <li>
+                <input id="q5" type="checkbox"><label for="q5">{{q5_question}}</label>
+                <p>{{q5_answer}}</p>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
