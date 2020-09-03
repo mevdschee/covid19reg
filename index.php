@@ -1,5 +1,5 @@
 <?php
-$identification = $_POST['covid19reg'] ?? $_COOKIE['covid19reg'] ?? false;
+$identification = $_POST['covid19reg'] ?? $_GET['covid19reg'] ?? $_COOKIE['covid19reg'] ?? false;
 $day = date('d');
 $date = date('Y-m-d');
 $time = date('H:i:s');
