@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>COVID19 registration</title>
-    <link rel="stylesheet" href="fonts.css">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="themes/{{theme}}.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="icon-192x192.png">
     <link rel="shortcut icon" sizes="192x192" href="icon-192x192.png">
     <link rel="apple-touch-icon" href="icon-192x192.png">
@@ -18,11 +18,11 @@
 
         <h1>{{title}}<br />{{organization}}</h1>
 
-        <form>
-            <img src="register.svg" />
-            <p><span>{{identification}}</span><br />{{has_registered}}</p>
-            <input type="hidden" name="covid19reg" value="">
-            <input type="submit" value="{{next}}">
+        <form method="post">
+            <label for="covid19reg">{{phone_email}}</label>
+            <textarea id="covid19reg" type="text" name="covid19reg"
+                placeholder="{{placeholder}}">{{identification}}</textarea>
+            <input type="submit" value="{{register}}">
         </form>
 
         <ul>
@@ -49,6 +49,10 @@
         </ul>
     </div>
 
+
+    <script>
+        document.getElementById("covid19reg").focus();
+    </script>
 </body>
 
 </html>
