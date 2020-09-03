@@ -6,7 +6,7 @@
     "{{next}}": "Next",
     "{{register}}": "Register",
     "{{q1_question}}": "Why should I register?",
-    "{{q1_answer}}": "If somebody happens to get/test positive on COVID19 and was at our venue at the same time as you, we use your registration to warn you.",
+    "{{q1_answer}}": "If somebody happens to get COVID19 and this person was at our venue at the same time you were there, we use your registration to warn you.",
     "{{q2_question}}": "Can I register other people?",
     "{{q2_answer}}": "Yes. You can simply enter the name of the person you want to register in the form.",
     "{{q3_question}}": "I like this tool, can I get it too?",
