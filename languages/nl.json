@@ -14,5 +14,5 @@
     "{{q4_question}}": "Is er een privacyverklaring?",
     "{{q4_answer}}": "Ja. In het kort: we slaan je antwoord (e-mailadres of telefoonnummer) op in een bestand op de server. Dit bestand wordt na een maand automatisch overschreven met de nieuwe gegevens. Alleen de systeembeheerder heeft toegang tot dit bestand.",
     "{{q5_question}}": "Hoe deel ik de URL?",
-    "{{q5_answer}}": "Je kunt de URL gemakkelijk delen via een <a href=\"qrcode.php\">QR code</a>."
+    "{{q5_answer}}": "Je kunt de URL gemakkelijk delen via een <a href=\"flyer.php\">QR code</a>."
 }
