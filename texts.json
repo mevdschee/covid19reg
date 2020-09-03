@@ -1,12 +1,12 @@
 {
     "{{title}}": "COVID19 registration",
-    "{{organization}}": "Some popular sports club",
+    "{{organization}}": "Name of your venue
     "{{has_registered}}": "has been registered!",
     "{{phone_email}}": "What is your phone number or email address?",
     "{{next}}": "Next",
     "{{register}}": "Register",
     "{{q1_question}}": "Why should I register?",
-    "{{q1_answer}}": "If somebody happens to get/test positive on COVID19, we use your registration to warn you, if you were at our location at the same.",
+    "{{q1_answer}}": "If somebody happens to get/test positive on COVID19, we use your registration to warn you, if you were at our venue at the same.",
     "{{q2_question}}": "Can I register other people?",
     "{{q2_answer}}": "Yes. You can simply enter the name of the person you want to register in the form.",
     "{{q3_question}}": "I like this tool, can I get it too?",
