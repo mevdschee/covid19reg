@@ -10,7 +10,7 @@
     "{{q2_question}}": "Can I register other people?",
     "{{q2_answer}}": "Yes. You can simply enter the name of the person you want to register in the form.",
     "{{q3_question}}": "I like this tool, can I get it too?",
-    "{{q3_answer}}": "Yes. This tool is open-source and can be installed on almost any hosting environment. Download the ZIP file (from Github). Extract the ZIP and upload the contents to your server. It should work out-of-the-box.",
+    "{{q3_answer}}": "Yes. This tool is open-source and can be installed on almost any hosting environment. Download the <a href=\"https://github.com/mevdschee/covid19reg\">ZIP file</a> (from Github). Extract the ZIP and upload the contents to your server. It should work out-of-the-box.",
     "{{q4_question}}": "Is there a privacy statement?",
     "{{q4_answer}}": "Yes. In short: we store your answer (email address or phone number) in a file on the server. This file is automatically overwritten after a month. Only the system administrator has access to this file.",
     "{{q5_question}}": "How do I share the URL?",
