@@ -24,11 +24,6 @@ form p span, form textarea, ul li a {color: #d2b82c;}
 form input[type="submit"] {background: #d2b82c;}
 
 
-
-
-
-
-
 * {padding: 0; margin: 0;}
 html {font-size: 15px;}
 body {color: white; font-family: 'Nunito'; font-weight: 600; line-height: 1.4; display: flex; flex-direction: column; align-items: center; height: 100%;}
