@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
 } else {
     $html = file_get_contents('register.html');
 }
-$texts = json_decode(file_get_contents('texts.json'), true);
-$texts['{{identification}}'] = $identification;
-echo str_replace(array_keys($texts), array_values($texts), $html);
+$config = json_decode(file_get_contents('config.json'), true);
+$config = array_merge($config, json_decode(file_get_contents('languages/' . $config['{{language}}'] . '.json'), true));
+$config['{{identification}}'] = $identification;
+echo str_replace(array_keys($config), array_values($config), $html);
