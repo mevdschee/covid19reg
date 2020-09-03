@@ -6,13 +6,13 @@
     "{{next}}": "Next",
     "{{register}}": "Register",
     "{{q1_question}}": "Why should I register?",
-    "{{q1_answer}}": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus libero eu commodo mattis. Nulla diam magna, tincidunt vitae felis sed, placerat ornare nibh. Nam porta eget dolor non ultrices. Etiam pharetra quam sit amet turpis bibendum, in pellentesque urna dapibus.",
+    "{{q1_answer}}": "If somebody happens to get/test positive on COVID19, we use your registration to warn you, if you were at our location at the same.",
     "{{q2_question}}": "Can I register other people?",
-    "{{q2_answer}}": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus libero eu commodo mattis. Nulla diam magna, tincidunt vitae felis sed, placerat ornare nibh. Nam porta eget dolor non ultrices. Etiam pharetra quam sit amet turpis bibendum, in pellentesque urna dapibus.",
+    "{{q2_answer}}": "Yes. You can simply enter the name of the person you want to register in the form.",
     "{{q3_question}}": "I like this tool, can I get it too?",
-    "{{q3_answer}}": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus libero eu commodo mattis. Nulla diam magna, tincidunt vitae felis sed, placerat ornare nibh. Nam porta eget dolor non ultrices. Etiam pharetra quam sit amet turpis bibendum, in pellentesque urna dapibus.",
+    "{{q3_answer}}": "Yes. This tool is open-source and can be installed by downloading a ZIP file. After extracting the ZIP you can upload the files to your server. It should work out-of-the-box.",
     "{{q4_question}}": "Is there a privacy statement?",
-    "{{q4_answer}}": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus libero eu commodo mattis. Nulla diam magna, tincidunt vitae felis sed, placerat ornare nibh. Nam porta eget dolor non ultrices. Etiam pharetra quam sit amet turpis bibendum, in pellentesque urna dapibus.",
+    "{{q4_answer}}": "Yes. In short: we store your answer (email address or phone number) in a file on the server. This file is automatically overwritten after a month. Only the system administrator has access to this file.",
     "{{q5_question}}": "How do I share the URL?",
-    "{{q5_answer}}": "You may scan the <a href=\"qrcode.php\">QR code</a>."
+    "{{q5_answer}}": "You can share the URL easily through a <a href=\"qrcode.php\">QR code</a>."
 }
