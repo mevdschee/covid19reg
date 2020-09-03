@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     setcookie('covid19reg', $identification, time() + 24 * 3600 * 365);
     $html = file_get_contents('success.html');
 } else {
-    $html = file_get_contents('index.html');
+    $html = file_get_contents('register.html');
 }
 $texts = json_decode(file_get_contents('texts.json'), true);
 $texts['{{identification}}'] = $identification;
