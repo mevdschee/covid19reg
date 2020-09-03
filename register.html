@@ -7,6 +7,9 @@
     <title>{{title}}</title>
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="icon-192x192.png">
+    <link rel="shortcut icon" sizes="192x192" href="icon-192x192.png">
+    <link rel="apple-touch-icon" href="icon-192x192.png">
 </head>
 
 <body>
@@ -16,7 +19,8 @@
 
         <form method="post">
             <label for="covid19reg">{{phone_email}}</label>
-            <textarea id="covid19reg" type="text" name="covid19reg" placeholder="{{placeholder}}">{{identification}}</textarea>
+            <textarea id="covid19reg" type="text" name="covid19reg"
+                placeholder="{{placeholder}}">{{identification}}</textarea>
             <input type="submit" value="{{register}}">
         </form>
 
