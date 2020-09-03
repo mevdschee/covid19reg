@@ -1,3 +1,3 @@
 body, form {background: #697182;}
-form p span, form textarea, ul li a {color: #3db1ea;}
+form p span, form input[type="text"], ul li a {color: #3db1ea;}
 form input[type="submit"] {background: #3db1ea;}

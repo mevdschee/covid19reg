@@ -28,16 +28,18 @@ form {
 }
 form img {width: 70px; margin: 20px auto;}
 form p {font-size: 20px; flex-grow: 1; text-align: center;}
-form input, form textarea {font-family: 'Nunito'; font-weight: 600;}
-form textarea {
+form input, form input[type="text"] {font-family: 'Nunito'; font-weight: 600;}
+form label + label {flex-grow: 1; cursor: text;}
+form input[type="text"] {
     background: none;
     border: 0;
     font-size: 20px;
-    flex-grow: 1;
     padding: 10px 0;
     resize: none;
     outline: none;
 }
+form input[type="text"]:-moz-ui-invalid,
+form input[type="text"]:invalid {box-shadow: none;}
 form input[type="submit"] {
     border-radius: 25px;
     border: 0;

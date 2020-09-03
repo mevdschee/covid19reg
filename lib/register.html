@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="themes/{{theme}}.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="icon-192x192.png">
-    <link rel="shortcut icon" sizes="192x192" href="icon-192x192.png">
-    <link rel="apple-touch-icon" href="icon-192x192.png">
+    <link rel="shortcut icon" type="image/png" href="images/icon-192x192.png">
+    <link rel="shortcut icon" sizes="192x192" href="images/icon-192x192.png">
+    <link rel="apple-touch-icon" href="images/icon-192x192.png">
 </head>
 
 <body>
@@ -20,8 +20,9 @@
 
         <form method="post">
             <label for="covid19reg">{{phone_email}}</label>
-            <textarea id="covid19reg" type="text" name="covid19reg"
-                placeholder="{{placeholder}}">{{identification}}</textarea>
+            <label>
+                <input id="covid19reg" type="text" name="covid19reg" placeholder="{{placeholder}}" value="{{identification}}"  required />
+            </label>
             <input type="submit" value="{{register}}">
         </form>
 
