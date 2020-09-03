@@ -1,0 +1,18 @@
+{
+    "{{title}}": "COVID19 registratie",
+    "{{organization}}": "Naam van jouw locatie",
+    "{{has_registered}}": "is geregistreerd!",
+    "{{phone_email}}": "Wat is je telefoonnummer of e-mailadres?",
+    "{{next}}": "Volgende",
+    "{{register}}": "Registreer",
+    "{{q1_question}}": "Waarom moet ik me registreren?",
+    "{{q1_answer}}": "Als iemand COVID19 krijgt of positief wordt getest, gebruiken we je registratie om je hiervoor te waarschuwen, als jij op onze locatie was op hetzelfde moment als deze persoon.",
+    "{{q2_question}}": "Kan ik andere mensen registreren?",
+    "{{q2_answer}}": "Ja. Je kan de naam van de persoon die je wil registreren simpelweg invoeren in het formulier.",
+    "{{q3_question}}": "Ik vind dit een mooie tool, kan ik deze ook gebruiken?",
+    "{{q3_answer}}": "Ja. Deze tool is open-source en kan op vrijwel elke hostingomgeving worden geinstalleerd. Download de ZIP. Pak hem uit en upload de inhoud naar je server. Het zou out-of-the-box moeten werken.",
+    "{{q4_question}}": "Is er een privacyverklaring?",
+    "{{q4_answer}}": "Ja. In het kort: we slaan je antwoord (e-mailadres of telefoonnummer) op in een bestand op de server. Dit bestand wordt na een maand automatisch overschreven met de nieuwe gegevens. Alleen de systeembeheerder heeft toegang tot dit bestand.",
+    "{{q5_question}}": "Hoe deel ik de URL?",
+    "{{q5_answer}}": "Je kunt de URL gemakkelijk delen via een <a href=\"qrcode.php\">QR code</a>."
+}
