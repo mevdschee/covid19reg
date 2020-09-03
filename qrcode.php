@@ -611,13 +611,13 @@ class QRCode
 //---------------------------------------------------------------
 
 define("QR_G15", (1 << 10) | (1 << 8) | (1 << 5)
-    | (1 << 4) | (1 << 2) | (1 << 1) | (1 << 0));
+     | (1 << 4) | (1 << 2) | (1 << 1) | (1 << 0));
 
 define("QR_G18", (1 << 12) | (1 << 11) | (1 << 10)
-    | (1 << 9) | (1 << 8) | (1 << 5) | (1 << 2) | (1 << 0));
+     | (1 << 9) | (1 << 8) | (1 << 5) | (1 << 2) | (1 << 0));
 
 define("QR_G15_MASK", (1 << 14) | (1 << 12) | (1 << 10)
-    | (1 << 4) | (1 << 1));
+     | (1 << 4) | (1 << 1));
 
 class QRUtil
 {
@@ -1434,7 +1434,7 @@ class QRAlphaNum extends QRData
 
         while ($i + 1 < strlen($c)) {
             $buffer->put(QRAlphaNum::getCode(ord($c[$i])) * 45
-                + QRAlphaNum::getCode(ord($c[$i + 1])), 11);
+                 + QRAlphaNum::getCode(ord($c[$i + 1])), 11);
             $i += 2;
         }
 
@@ -1623,9 +1623,9 @@ class QRMath
 
         for ($i = 8; $i < 256; $i++) {
             self::$QR_MATH_EXP_TABLE[$i] = self::$QR_MATH_EXP_TABLE[$i - 4]
-                ^ self::$QR_MATH_EXP_TABLE[$i - 5]
-                ^ self::$QR_MATH_EXP_TABLE[$i - 6]
-                ^ self::$QR_MATH_EXP_TABLE[$i - 8];
+             ^ self::$QR_MATH_EXP_TABLE[$i - 5]
+             ^ self::$QR_MATH_EXP_TABLE[$i - 6]
+             ^ self::$QR_MATH_EXP_TABLE[$i - 8];
         }
 
         self::$QR_MATH_LOG_TABLE = QRMath::createNumArray(256);
@@ -1892,7 +1892,7 @@ class QRBitBuffer
 
 //---------------------------------------------------------
 
-$url = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}/{$_SERVER['REQUEST_URI']}";
+$url = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
 $url = str_replace('qrcode.php', '', $url);
 
 $qr = QRCode::getMinimumQRCode($url, QR_ERROR_CORRECT_LEVEL_L);
