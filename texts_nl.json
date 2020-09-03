@@ -10,7 +10,7 @@
     "{{q2_question}}": "Kan ik andere mensen registreren?",
     "{{q2_answer}}": "Ja. Je kan de naam van de persoon die je wil registreren simpelweg invoeren in het formulier.",
     "{{q3_question}}": "Ik vind dit een mooie tool, kan ik deze ook gebruiken?",
-    "{{q3_answer}}": "Ja. Deze tool is open-source en kan op vrijwel elke hostingomgeving worden geinstalleerd. Download het ZIP bestand (van Github). Pak hem uit en upload de inhoud naar je server. Het zou out-of-the-box moeten werken.",
+    "{{q3_answer}}": "Ja. Deze tool is open-source en kan op vrijwel elke hostingomgeving worden geinstalleerd. Download het ZIP bestand (van Github). Pak het bestand uit en upload de inhoud naar je server. Het zou out-of-the-box moeten werken.",
     "{{q4_question}}": "Is er een privacyverklaring?",
     "{{q4_answer}}": "Ja. In het kort: we slaan je antwoord (e-mailadres of telefoonnummer) op in een bestand op de server. Dit bestand wordt na een maand automatisch overschreven met de nieuwe gegevens. Alleen de systeembeheerder heeft toegang tot dit bestand.",
     "{{q5_question}}": "Hoe deel ik de URL?",
