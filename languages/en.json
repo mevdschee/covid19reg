@@ -14,5 +14,5 @@
     "{{q4_question}}": "Is there a privacy statement?",
     "{{q4_answer}}": "Yes. In short: we store your answer (email address or phone number) in a file on the server. This file is automatically overwritten after a month. Only the system administrator has access to this file.",
     "{{q5_question}}": "How do I share the URL?",
-    "{{q5_answer}}": "You can share the URL easily through a <a href=\"?flyer=1\">QR code</a>."
+    "{{q5_answer}}": "You can share the URL easily through <a href=\"?flyer=1\">this flyer</a>, which contains a QR code and a URL."
 }
