@@ -3,6 +3,7 @@
     "{{organization}}": "Name of your venue",
     "{{has_registered}}": "has been registered!",
     "{{phone_email}}": "What is your phone number or email address?",
+    "{{placeholder}}": "johndoe@email.com",
     "{{next}}": "Next",
     "{{register}}": "Register",
     "{{q1_question}}": "Why should I register?",
