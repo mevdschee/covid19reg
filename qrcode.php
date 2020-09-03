@@ -1897,12 +1897,12 @@ $url = str_replace('qrcode.php', '', $url);
 
 $qr = QRCode::getMinimumQRCode($url, QR_ERROR_CORRECT_LEVEL_L);
 
-//$qr->printHTML("20px");
+$qr->printHTML("20px");
 
-$im = $qr->createImage(20, 40);
+//$im = $qr->createImage(20, 40);
 
-header("Content-type: image/gif");
-imagegif($im);
+//header("Content-type: image/gif");
+//imagegif($im);
 
-imagedestroy($im);
+//imagedestroy($im);
 //---------------------------------------------------------
