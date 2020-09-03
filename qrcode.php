@@ -288,8 +288,10 @@ class QRCode
 
             for ($c = -1; $c <= 7; $c++) {
 
-                if ($row + $r <= -1 || $this->moduleCount <= $row + $r
-                    || $col + $c <= -1 || $this->moduleCount <= $col + $c) {
+                if (
+                    $row + $r <= -1 || $this->moduleCount <= $row + $r
+                    || $col + $c <= -1 || $this->moduleCount <= $col + $c
+                ) {
                     continue;
                 }
 
@@ -566,12 +568,14 @@ class QRCode
                 if ($this->isDark($r, $c)) {
 
                     // update $black to $fgc
-                    imagefilledrectangle($image,
+                    imagefilledrectangle(
+                        $image,
                         $margin + $c * $size,
                         $margin + $r * $size,
                         $margin + ($c + 1) * $size - 1,
                         $margin + ($r + 1) * $size - 1,
-                        $fgc);
+                        $fgc
+                    );
                 }
             }
         }
@@ -607,13 +611,13 @@ class QRCode
 //---------------------------------------------------------------
 
 define("QR_G15", (1 << 10) | (1 << 8) | (1 << 5)
-     | (1 << 4) | (1 << 2) | (1 << 1) | (1 << 0));
+    | (1 << 4) | (1 << 2) | (1 << 1) | (1 << 0));
 
 define("QR_G18", (1 << 12) | (1 << 11) | (1 << 10)
-     | (1 << 9) | (1 << 8) | (1 << 5) | (1 << 2) | (1 << 0));
+    | (1 << 9) | (1 << 8) | (1 << 5) | (1 << 2) | (1 << 0));
 
 define("QR_G15_MASK", (1 << 14) | (1 << 12) | (1 << 10)
-     | (1 << 4) | (1 << 1));
+    | (1 << 4) | (1 << 1));
 
 class QRUtil
 {
@@ -687,26 +691,34 @@ class QRUtil
         $m = 0;
 
         switch ($errorCorrectLevel) {
-            case QR_ERROR_CORRECT_LEVEL_L:$e = 0;
+            case QR_ERROR_CORRECT_LEVEL_L:
+                $e = 0;
                 break;
-            case QR_ERROR_CORRECT_LEVEL_M:$e = 1;
+            case QR_ERROR_CORRECT_LEVEL_M:
+                $e = 1;
                 break;
-            case QR_ERROR_CORRECT_LEVEL_Q:$e = 2;
+            case QR_ERROR_CORRECT_LEVEL_Q:
+                $e = 2;
                 break;
-            case QR_ERROR_CORRECT_LEVEL_H:$e = 3;
+            case QR_ERROR_CORRECT_LEVEL_H:
+                $e = 3;
                 break;
             default:
                 trigger_error("e:$errorCorrectLevel", E_USER_ERROR);
         }
 
         switch ($mode) {
-            case QR_MODE_NUMBER:$m = 0;
+            case QR_MODE_NUMBER:
+                $m = 0;
                 break;
-            case QR_MODE_ALPHA_NUM:$m = 1;
+            case QR_MODE_ALPHA_NUM:
+                $m = 1;
                 break;
-            case QR_MODE_8BIT_BYTE:$m = 2;
+            case QR_MODE_8BIT_BYTE:
+                $m = 2;
                 break;
-            case QR_MODE_KANJI:$m = 3;
+            case QR_MODE_KANJI:
+                $m = 3;
                 break;
             default:
                 trigger_error("m:$mode", E_USER_ERROR);
@@ -732,14 +744,22 @@ class QRUtil
 
         switch ($maskPattern) {
 
-            case QR_MASK_PATTERN000:return ($i + $j) % 2 == 0;
-            case QR_MASK_PATTERN001:return $i % 2 == 0;
-            case QR_MASK_PATTERN010:return $j % 3 == 0;
-            case QR_MASK_PATTERN011:return ($i + $j) % 3 == 0;
-            case QR_MASK_PATTERN100:return (floor($i / 2) + floor($j / 3)) % 2 == 0;
-            case QR_MASK_PATTERN101:return ($i * $j) % 2 + ($i * $j) % 3 == 0;
-            case QR_MASK_PATTERN110:return (($i * $j) % 2 + ($i * $j) % 3) % 2 == 0;
-            case QR_MASK_PATTERN111:return (($i * $j) % 3 + ($i + $j) % 2) % 2 == 0;
+            case QR_MASK_PATTERN000:
+                return ($i + $j) % 2 == 0;
+            case QR_MASK_PATTERN001:
+                return $i % 2 == 0;
+            case QR_MASK_PATTERN010:
+                return $j % 3 == 0;
+            case QR_MASK_PATTERN011:
+                return ($i + $j) % 3 == 0;
+            case QR_MASK_PATTERN100:
+                return (floor($i / 2) + floor($j / 3)) % 2 == 0;
+            case QR_MASK_PATTERN101:
+                return ($i * $j) % 2 + ($i * $j) % 3 == 0;
+            case QR_MASK_PATTERN110:
+                return (($i * $j) % 2 + ($i * $j) % 3) % 2 == 0;
+            case QR_MASK_PATTERN111:
+                return (($i * $j) % 3 + ($i + $j) % 2) % 2 == 0;
 
             default:
                 trigger_error("mask:$maskPattern", E_USER_ERROR);
@@ -822,13 +842,15 @@ class QRUtil
 
         for ($row = 0; $row < $moduleCount; $row++) {
             for ($col = 0; $col < $moduleCount - 6; $col++) {
-                if ($qrCode->isDark($row, $col)
+                if (
+                    $qrCode->isDark($row, $col)
                     && !$qrCode->isDark($row, $col + 1)
                     && $qrCode->isDark($row, $col + 2)
                     && $qrCode->isDark($row, $col + 3)
                     && $qrCode->isDark($row, $col + 4)
                     && !$qrCode->isDark($row, $col + 5)
-                    && $qrCode->isDark($row, $col + 6)) {
+                    && $qrCode->isDark($row, $col + 6)
+                ) {
                     $lostPoint += 40;
                 }
             }
@@ -836,13 +858,15 @@ class QRUtil
 
         for ($col = 0; $col < $moduleCount; $col++) {
             for ($row = 0; $row < $moduleCount - 6; $row++) {
-                if ($qrCode->isDark($row, $col)
+                if (
+                    $qrCode->isDark($row, $col)
                     && !$qrCode->isDark($row + 1, $col)
                     && $qrCode->isDark($row + 2, $col)
                     && $qrCode->isDark($row + 3, $col)
                     && $qrCode->isDark($row + 4, $col)
                     && !$qrCode->isDark($row + 5, $col)
-                    && $qrCode->isDark($row + 6, $col)) {
+                    && $qrCode->isDark($row + 6, $col)
+                ) {
                     $lostPoint += 40;
                 }
             }
@@ -895,9 +919,11 @@ class QRUtil
     {
         for ($i = 0; $i < strlen($s); $i++) {
             $c = ord($s[$i]);
-            if (!(QRUtil::toCharCode('0') <= $c && $c <= QRUtil::toCharCode('9'))
+            if (
+                !(QRUtil::toCharCode('0') <= $c && $c <= QRUtil::toCharCode('9'))
                 && !(QRUtil::toCharCode('A') <= $c && $c <= QRUtil::toCharCode('Z'))
-                && strpos(" $%*+-./:", $s[$i]) === false) {
+                && strpos(" $%*+-./:", $s[$i]) === false
+            ) {
                 return false;
             }
         }
@@ -1408,7 +1434,7 @@ class QRAlphaNum extends QRData
 
         while ($i + 1 < strlen($c)) {
             $buffer->put(QRAlphaNum::getCode(ord($c[$i])) * 45
-                 + QRAlphaNum::getCode(ord($c[$i + 1])), 11);
+                + QRAlphaNum::getCode(ord($c[$i + 1])), 11);
             $i += 2;
         }
 
@@ -1420,28 +1446,40 @@ class QRAlphaNum extends QRData
     public static function getCode($c)
     {
 
-        if (QRUtil::toCharCode('0') <= $c
-            && $c <= QRUtil::toCharCode('9')) {
+        if (
+            QRUtil::toCharCode('0') <= $c
+            && $c <= QRUtil::toCharCode('9')
+        ) {
             return $c - QRUtil::toCharCode('0');
-        } else if (QRUtil::toCharCode('A') <= $c
-            && $c <= QRUtil::toCharCode('Z')) {
+        } else if (
+            QRUtil::toCharCode('A') <= $c
+            && $c <= QRUtil::toCharCode('Z')
+        ) {
             return $c - QRUtil::toCharCode('A') + 10;
         } else {
             switch ($c) {
-                case QRUtil::toCharCode(' '): return 36;
-                case QRUtil::toCharCode('$'): return 37;
-                case QRUtil::toCharCode('%'): return 38;
-                case QRUtil::toCharCode('*'): return 39;
-                case QRUtil::toCharCode('+'): return 40;
-                case QRUtil::toCharCode('-'): return 41;
-                case QRUtil::toCharCode('.'): return 42;
-                case QRUtil::toCharCode('/'): return 43;
-                case QRUtil::toCharCode(':'): return 44;
+                case QRUtil::toCharCode(' '):
+                    return 36;
+                case QRUtil::toCharCode('$'):
+                    return 37;
+                case QRUtil::toCharCode('%'):
+                    return 38;
+                case QRUtil::toCharCode('*'):
+                    return 39;
+                case QRUtil::toCharCode('+'):
+                    return 40;
+                case QRUtil::toCharCode('-'):
+                    return 41;
+                case QRUtil::toCharCode('.'):
+                    return 42;
+                case QRUtil::toCharCode('/'):
+                    return 43;
+                case QRUtil::toCharCode(':'):
+                    return 44;
                 default:
                     trigger_error("illegal char : $c", E_USER_ERROR);
             }
         }
-
     }
 }
 
@@ -1465,7 +1503,6 @@ class QR8BitByte extends QRData
             $buffer->put(ord($data[$i]), 8);
         }
     }
-
 }
 
 //---------------------------------------------------------------
@@ -1516,45 +1553,53 @@ abstract class QRData
             // 1 - 9
 
             switch ($this->mode) {
-                case QR_MODE_NUMBER:return 10;
-                case QR_MODE_ALPHA_NUM:return 9;
-                case QR_MODE_8BIT_BYTE:return 8;
-                case QR_MODE_KANJI:return 8;
+                case QR_MODE_NUMBER:
+                    return 10;
+                case QR_MODE_ALPHA_NUM:
+                    return 9;
+                case QR_MODE_8BIT_BYTE:
+                    return 8;
+                case QR_MODE_KANJI:
+                    return 8;
                 default:
                     trigger_error("mode:$this->mode", E_USER_ERROR);
             }
-
         } else if ($type < 27) {
 
             // 10 - 26
 
             switch ($this->mode) {
-                case QR_MODE_NUMBER:return 12;
-                case QR_MODE_ALPHA_NUM:return 11;
-                case QR_MODE_8BIT_BYTE:return 16;
-                case QR_MODE_KANJI:return 10;
+                case QR_MODE_NUMBER:
+                    return 12;
+                case QR_MODE_ALPHA_NUM:
+                    return 11;
+                case QR_MODE_8BIT_BYTE:
+                    return 16;
+                case QR_MODE_KANJI:
+                    return 10;
                 default:
                     trigger_error("mode:$this->mode", E_USER_ERROR);
             }
-
         } else if ($type < 41) {
 
             // 27 - 40
 
             switch ($this->mode) {
-                case QR_MODE_NUMBER:return 14;
-                case QR_MODE_ALPHA_NUM:return 13;
-                case QR_MODE_8BIT_BYTE:return 16;
-                case QR_MODE_KANJI:return 12;
+                case QR_MODE_NUMBER:
+                    return 14;
+                case QR_MODE_ALPHA_NUM:
+                    return 13;
+                case QR_MODE_8BIT_BYTE:
+                    return 16;
+                case QR_MODE_KANJI:
+                    return 12;
                 default:
                     trigger_error("mode:$this->mode", E_USER_ERROR);
             }
-
         } else {
             trigger_error("mode:$this->mode", E_USER_ERROR);
         }
     }
-
 }
 
 //---------------------------------------------------------------
@@ -1578,9 +1623,9 @@ class QRMath
 
         for ($i = 8; $i < 256; $i++) {
             self::$QR_MATH_EXP_TABLE[$i] = self::$QR_MATH_EXP_TABLE[$i - 4]
-             ^ self::$QR_MATH_EXP_TABLE[$i - 5]
-             ^ self::$QR_MATH_EXP_TABLE[$i - 6]
-             ^ self::$QR_MATH_EXP_TABLE[$i - 8];
+                ^ self::$QR_MATH_EXP_TABLE[$i - 5]
+                ^ self::$QR_MATH_EXP_TABLE[$i - 6]
+                ^ self::$QR_MATH_EXP_TABLE[$i - 8];
         }
 
         self::$QR_MATH_LOG_TABLE = QRMath::createNumArray(256);
@@ -1848,7 +1893,7 @@ class QRBitBuffer
 //---------------------------------------------------------
 
 $url = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}/{$_SERVER['REQUEST_URI']}";
-$url = str_replace('qrcode', 'covid19reg', $url);
+$url = str_replace('qrcode.php', '', $url);
 
 $qr = QRCode::getMinimumQRCode($url, QR_ERROR_CORRECT_LEVEL_L);
 
