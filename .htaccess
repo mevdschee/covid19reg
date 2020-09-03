@@ -1,7 +1,3 @@
 <Files "??.php">  
   Require all denied
 </Files>
-
-RewriteEngine On 
-RewriteCond %{REQUEST_FILENAME} !-f 
-RewriteRule .* /on/covid19reg.php [R=301,NC,L]
