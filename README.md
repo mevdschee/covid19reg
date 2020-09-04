@@ -36,7 +36,7 @@ In the config.json you can set the name of your venue and one of the following t
 
 You can also choose on of the following languages:
 
-- English (en)
-- Nederlands (nl)
+- en (English)
+- nl (Nederlands)
 - ... (please translate and send a pull request)
 
