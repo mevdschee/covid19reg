@@ -1,6 +1,6 @@
 # COVID-19 attendance registration
 
-![screenshot](images/screenshot.png)
+![recording](images/recording.gif)
 
 This is a simple COVID-19 attendance registration tool that can be used at any venue, like sports clubs, churches, restaurants, bars, etc. The tool has multiple themes (color sets) and contains multiple languages.
 
