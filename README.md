@@ -6,7 +6,7 @@ This is a simple COVID-19 attendance registration tool that can be used at any v
 
 ## Why should I use this tool?
 
-This tool registers attendees at your venue and is the digital equivalent of paper registration ballots that you can hand-out and collect in a closed box. If somebody happens to get COVID-19 and this person was at your venue, this tool will help you contact the people that might have been exposed.
+This tool registers attendees at your venue and is the mobile-friendly QR-code based digital equivalent of paper registration ballots that you can hand-out and collect in a closed box. If somebody happens to get COVID-19 and this person was at your venue, this tool will help you contact the people that might have been exposed.
 
 ## How about privacy?
 
