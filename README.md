@@ -10,7 +10,7 @@ This tool registers attendees at your venue and is the mobile-friendly QR-code b
 
 ## How about privacy?
 
-In short: the tool stores the answers (email address or phone number) in a file on your web server. This file is automatically overwritten after a month. It is designed in a way that only the system administrator has access to this data.
+In short: the tool stores the answers (email address or phone number) in daily files on your web server. These files are automatically overwritten after a month. It is designed in a way that only the system administrator has access to this data.
 
 ## Dependencies
 
