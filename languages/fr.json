@@ -1,7 +1,7 @@
 {
     "{{title}}": "Registre de présence COVID-19",
     "{{has_registered}}": "a été enregistrée",
-    "{{phone_email}}": "Quel est votre nom?",
+    "{{phone_email}}": "Quel est votre nom, email ou téléphone?",
     "{{placeholder}}": "John Doe",
     "{{next}}": "Suivant",
     "{{register}}": "Enregistrer",
