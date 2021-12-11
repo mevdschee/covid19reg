@@ -38,5 +38,6 @@ You can also choose on of the following languages:
 
 - en (English)
 - nl (Nederlands)
+- fr (French)
 - ... (please translate and send a pull request)
 

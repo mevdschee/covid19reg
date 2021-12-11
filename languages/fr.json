@@ -1,0 +1,18 @@
+{
+    "{{title}}": "Registre de présence COVID-19",
+    "{{has_registered}}": "a été enregistrée",
+    "{{phone_email}}": "Quel est votre nom, email ou téléphone?",
+    "{{placeholder}}": "John Doe",
+    "{{next}}": "Suivant",
+    "{{register}}": "Enregistrer",
+    "{{q1_question}}": "Pourquoi s'enregistrer?",
+    "{{q1_answer}}": "Si quelqu'un est présent sur site au moment que vous, nous pourrons utiliser ce registre pour vous en informer.",
+    "{{q2_question}}": "Puis-je enregistrer d'autres personens?",
+    "{{q2_answer}}": "Oui. Vous pouvez simplement entrer le nom de la personne que vous voulez enregistrer.",
+    "{{q3_question}}": "J'aime cet outil, où puis-je l'obtenir?",
+    "{{q3_answer}}": "Cet outil est open-source et peut être installé chez presque n'importe quel hébergeur. Téléchargez <a href=\"https://github.com/mevdschee/covid19reg\">l'archive ZIP</a> (depuis Github). Extraire et transférer sur votre serveur. Cela devrait marcher directement.",
+    "{{q4_question}}": "Y-a-t-il une déclaration de confidentialité?",
+    "{{q4_answer}}": "Oui. Version courte: nous stockons votre réponse (nom, adresse mail ou numéro de téléphone) dans un fichier sur le serveur. Ce fichier est automatiquement écrasé au bout d'un mois. Seuls les administrateurs du serveur peuvent le consulter.",
+    "{{q5_question}}": "Comment partager l'URL?",
+    "{{q5_answer}}": "Vous pouvez la partager facilement avec <a href=\"?flyer=1\">cette affiche</a>, qui contient un QR code et l'URL."
+}
